@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+  <!-- font-awesome-cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- font-awesome-cdn -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <!-- navber start -->
+  <i class="fas fa-bars fa-2x" id="menu-icon"></i>
+  <nav id="menu" class="hidden">
+    <ul class="nav-upper flex-space">
+      <li class="nav-list"><a href="/index.html" class="nav-link">Home</a></li>
+      <li class="nav-list"><a href="/register.html" class="nav-link">Register</a></li>
+      <li class="nav-list"><a href="/login.html" class="nav-link">Login</a></li>
+      <li class="nav-list"><a href="/index.html" class="nav-link">Logout</a></li>
+      <li class="nav-list"><a href="/product.html" class="nav-link">Product</a></li>
+      <li class="nav-list"><a href="/contact.html" class="nav-link">Contact</a></li>
+
+      <li class="nav-list">
+        <a href="/profile.html" class="nav-link"><img src="/image/Delwar.png" alt="Profile-logo" class="nav-img">
+        </a>
+      </li>
+
+    </ul>
+  </nav>
+  <!-- navber ends -->
+  <main>
+    <div class="cart flex-center">
+      <div class="cart-items">
+        <div class="cart-items-heading card">
+          <h3 class="cart-title">Shopping Cart[2 items]</h3>
+          <div class="cart-items-action">
+
+            <label for="select">
+              <input type="checkbox" id="select" checked="select" class="lable-top" />
+              Select all items
+            </label>
+            <button class="btn">
+              <i class="fas fa-trash-alt"></i>
+            </button>
+            <button class="btn">Shop more</button>
+          </div>
+        </div>
+
+        <div class="cart-item card flex-space">
+          <label for="select">
+            <input type="checkbox" name="" id="" class="lable">
+          </label>
+
+          <img class="cart-item-img" src="/image/phone.webp" alt="laptop">
+
+          <div class="cart-item-desc">
+            <h3>Lenovo I10 pro</h3>
+            <h4>Price: $699.99</h4>
+            <p>Free Shipping</p>
+          </div>
+
+          <div class="cart-item-actions">
+            <button class="btn cart-item-btn">
+              <i class=" fas fa-trash-alt"></i>
+            </button>
+            <button class="btn cart-item-btn">
+              <i class="fas fa-plus"></i>
+            </button>
+            <button class="btn cart-item-btn">3</button>
+            <button class="btn cart-item-btn">
+              <i class="fas fa-minus"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="cart-item card flex-space">
+          <label for="checkbox">
+            <input type="checkbox" name="" id="" class="lable">
+          </label>
+
+          <img class="cart-item-img" src="/image/talevision.jfif" alt="television">
+
+          <div class="cart-item-desc">
+            <h3>Samsung LED TV</h3>
+            <h4>Price: $399.99</h4>
+            <p>Shipping Cost: 5$</p>
+          </div>
+
+          <div class="cart-item-actions">
+            <button class="btn cart-item-btn">
+              <i class=" fas fa-trash-alt"></i>
+            </button>
+            <button class="btn cart-item-btn">
+              <i class="fas fa-plus"></i>
+            </button>
+            <button class="btn cart-item-btn">3</button>
+            <button class="btn cart-item-btn">
+              <i class="fas fa-minus"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="cart-payment">
+        <div class="cart-payment-summary card ">
+          <h3>Payment Summary</h3>
+          <div>
+            <p>Subtotal:</p>
+            <p>$699.99</p>
+
+          </div>
+          <div>
+            <p>Shipping cost:</p>
+            <p>$100</p>
+          </div>
+          <div>
+            <p>Total Cost:</p>
+            <p>799.99$</p>
+          </div>
+          <button class="btn pay-btn">PAY NOW</button>
+        </div>
+        <div class="cart-payment-mathod card">
+          <h2>Payment Mathods</h2>
+          <div>
+            <i class="fa-brands fa-cc-visa fa-3x"></i>
+            <i class="fa-brands fa-cc-mastercard fa-3x"></i>
+            <i class="fa-brands fa-cc-paypal fa-3x"></i>
+            <i class="fa-brands fa-cc-amex fa-3x"></i>
+            <i class="fa-brands fa-cc-paypal fa-3x"></i>
+            <i class="fa-brands fa-cc-apple-pay fa-3x"></i>
+            <i class="fa-brands fa-cc-amazon-pay fa-3x"></i>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- footer start -->
+  <footer class="footer flex-space">
+    <div class="footers">
+      <label for="subscrib">Subscrib to email:</label>
+      <input type="email" id="subscrib" name="subscrib" placeholder="Enter your email" class="input">
+      <button class="btn btn-sub">Subscrib</button>
+    </div>
+    <div>
+      <p>&copy; 2024 Ecomarch website Delwar Sheikh </p>
+    </div>
+  </footer>
+  <!-- footer ends -->
+
+  <script src="/index.js"></script>
+
+</body>
+
+</html>
